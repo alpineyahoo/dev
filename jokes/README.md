@@ -13,6 +13,7 @@ curl -sL "https://raw.githubusercontent.com/alpineyahoo/dev/main/jokes/run.sh" |
 
 ## Install
 ```shell
-curl -sL "https://raw.githubusercontent.com/alpineyahoo/dev/main/jokes/run.sh" >> ~/bin/jokes # example, assuming ~/bin is in your $PATH
+# Example below is assuming that ~/bin is in your $PATH
+curl -sL "https://raw.githubusercontent.com/alpineyahoo/dev/main/jokes/run.sh" >> ~/bin/jokes
 chmod 700 ~/bin/jokes
 ```
