@@ -1,0 +1,2 @@
+#!/usr/bin/env zsh
+/bin/ls -alF "$@" | awk -F ' ' '{print substr($0, index($0,$9))}'
