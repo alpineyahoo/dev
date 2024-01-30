@@ -11,6 +11,8 @@ cat <<- EOF
 	curl "wttr.in/Matsumoto?lang=ja&format=4" # Weather in Matsumoto, Japan
 	curl "wttr.in/Matsumoto?lang=ja"
 	curl ja.wttr.in/Matsumoto
+	fortune -f # list fortunes path
+	fortune
 EOF
 )
 echo $jokes | gum choose --limit=1 | zsh
