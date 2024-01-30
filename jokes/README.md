@@ -19,4 +19,5 @@ chmod 700 ~/bin/jokes
 
 # or simply
 echo "alias jokes='curl -sL https://raw.githubusercontent.com/alpineyahoo/dev/main/jokes/run.sh | zsh'" >> ~/.zshrc
+source ~/.zshrc
 ```
