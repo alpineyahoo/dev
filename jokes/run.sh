@@ -13,11 +13,11 @@ cat <<- EOF
 	curl ja.wttr.in/Matsumoto
 	fortune -f # list fortunes path
 	fortune
-	curl -sLI httpbin.org/status/200 -o /dev/null -w '%{http_code}\n' # 200
-	curl -sLI httpbin.org/status/404 -o /dev/null -w '%{http_code}\n' # 404
-	curl -sLI httpbin.org/status/418 -o /dev/null -w '%{http_code}\n' # 418
-	curl -sLI httpie.io/hello -o /dev/null -w '%{http_code}\n' # 200
-	curl -sLI example.com -o /dev/null -w '%{http_code}\n' # 200
+	curl -sLI httpbin.org/status/200 -o /dev/null -w '%{http_code}\\n' # 200
+	curl -sLI httpbin.org/status/404 -o /dev/null -w '%{http_code}\\n' # 404
+	curl -sLI httpbin.org/status/418 -o /dev/null -w '%{http_code}\\n' # 418
+	curl -sLI httpie.io/hello -o /dev/null -w '%{http_code}\\n' # 200
+	curl -sLI example.com -o /dev/null -w '%{http_code}\\n' # 200
 EOF
 )"
 echo $jokes | gum choose --limit=1 | zsh
