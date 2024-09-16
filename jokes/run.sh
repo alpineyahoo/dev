@@ -20,4 +20,4 @@ cat <<- EOF
 	curl -sLI example.com -o /dev/null -w '%{http_code}' # 200
 EOF
 )
-echo $jokes | gum choose --limit=1 | zsh
+echo $jokes | sd '\{http_code\}' '{http_code}\\n' | gum choose --limit=1 | zsh
