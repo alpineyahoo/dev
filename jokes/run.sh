@@ -3,7 +3,7 @@
 # This is the "jokes" script written by @alpineyahoo
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin"
-jokes="$(
+jokes='$(
 cat <<- EOF
 	mpv --loop "https://www.nhk.or.jp/das/audio/D0002011/D0002011514_00000_A_001.m4a" # Pigeon
 	mpv --loop "https://www.nhk.or.jp/das/audio/D0002011/D0002011518_00000_A_001.m4a" # School bell
@@ -19,5 +19,5 @@ cat <<- EOF
 	curl -sLI httpie.io/hello -o /dev/null -w '%{http_code}\\n' # 200
 	curl -sLI example.com -o /dev/null -w '%{http_code}\\n' # 200
 EOF
-)"
+)'
 echo $jokes | gum choose --limit=1 | zsh
